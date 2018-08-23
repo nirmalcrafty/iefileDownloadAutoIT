@@ -1,0 +1,60 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "login;validate-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Validate login with invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I open the page",
+            "match": {
+              "location": "stepdefinitions\\sampleSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I upload",
+            "match": {
+              "location": "stepdefinitions\\sampleSteps.ts:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6000000,
+              "error_message": "AssertionError: expected {} to equal 'Base64 Decode and Encode - Online'\n    at Object.<anonymous> (C:\\learn\\sample\\stepdefinitions\\sampleSteps.ts:22:32)\n    at Generator.next (<anonymous>)\n    at C:\\learn\\sample\\stepdefinitions\\sampleSteps.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\learn\\sample\\stepdefinitions\\sampleSteps.ts:3:12)\n    at World.cucumber_1.When (C:\\learn\\sample\\stepdefinitions\\sampleSteps.ts:18:29)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
